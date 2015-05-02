@@ -1,51 +1,39 @@
+<p>Commit Changes --------------</p>
 
+<p>* https://linuxprograms.wordpress.com/2012/01/30/git-how-to-recursively-add-the-files-in-a-directory/</p>
 
-Git Notes
---------------
+<p>git add * git commit -m &quot;init&quot; git push</p>
 
-* https://linuxprograms.wordpress.com/2012/01/30/git-how-to-recursively-add-the-files-in-a-directory/
+<p>* http://rogerdudler.github.io/git-guide/</p>
 
-git add *
-git commit -m "init"
-git push
+<p>&#96;&#96;&#96;</p>
 
-* http://rogerdudler.github.io/git-guide/
+<p>git add <filename> git add * git commit -m &quot;Commit message&quot; git push origin master</p>
 
-```
+<p>Change master to whatever branch you want to push your changes to.</p>
 
-git add <filename>
-git add *
-git commit -m "Commit message"
-git push origin master
+<p>If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with git remote add origin <server></p>
 
-Change master to whatever branch you want to push your changes to.
+<p>to update your local repository to the newest commit, execute  git pull</p>
 
-If you have not cloned an existing repository and want to connect your repository to a remote server, you need to add it with
-git remote add origin <server>
+<p> update &amp; merge</p>
 
-to update your local repository to the newest commit, execute 
-git pull
+<p>to update your local repository to the newest commit, execute </p>
 
+<p>git pull</p>
 
-update & merge
+<p>in your working directory to fetch and merge remote changes.</p>
 
-to update your local repository to the newest commit, execute 
+<p>to merge another branch into your active branch (e.g. master), use</p>
 
-git pull
+<p>git merge <branch></p>
 
-in your working directory to fetch and merge remote changes.
+<p>in both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by git. After changing, you need to mark them as merged with</p>
 
-to merge another branch into your active branch (e.g. master), use
+<p>git add <filename></p>
 
-git merge <branch>
+<p>before merging changes, you can also preview them by using</p>
 
-in both cases git tries to auto-merge changes. Unfortunately, this is not always possible and results in conflicts. You are responsible to merge those conflicts manually by editing the files shown by git. After changing, you need to mark them as merged with
+<p>git diff <source_branch> <target_branch></p>
 
-git add <filename>
-
-before merging changes, you can also preview them by using
-
-git diff <source_branch> <target_branch>
-
-```
-
+<p>&#96;&#96;&#96; </p>
